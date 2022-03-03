@@ -1,5 +1,5 @@
 <?php
-
+use App\Http\Livewire\HomeComponent;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,8 +13,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-route::get('/', function(){
-    return view('layouts');
-});
- 
+ route::get('/', HomeComponent::class)->name('home');
  
