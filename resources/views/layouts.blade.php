@@ -129,7 +129,7 @@
         <li class="login-form"> 
         <a href="#" title="admin">Admin</a>
     <ul class="drop-down one-column hover-fade">
-        <li><a href="#">Dashboard</a></li>
+        <li><a href="{{route('admin.dashboard')}}">Admin Dashboard</a></li>
         <li><a href="{{route('logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a></li>
     </ul>
        </li>
@@ -137,7 +137,7 @@
      <li class="login-form"> 
         <a href="#" title="#">Service Provider</a>
         <ul class="drop-down one-column hover-fade">
-            <li><a href="#">Dashboard</a></li>
+            <li><a href="{{route('service.dashboard')}}">Service Dashboard</a></li>
             <li><a href="{{route('logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a></li>
         </ul>
     </li>
@@ -145,7 +145,7 @@
      <li class="login-form"> 
         <a href="#" title="#">Customer</a>
      <ul class="drop-down one-column hover-fade">
-        <li><a href="#">Dashboard</a></li>
+        <li><a href="{{route('customer.dashboard')}}">Customer</a></li>
         <li><a href="{{route('logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a></li>
     </ul>
  @endif
