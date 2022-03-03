@@ -13,10 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('posts');
+route::get('/', function(){
+    return view('layouts');
 });
-
-Route::get('/post', function () {
-    return view('post');
-});
+ 
+ 
