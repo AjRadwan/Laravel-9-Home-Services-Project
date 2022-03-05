@@ -55,46 +55,46 @@ data-saveperformance="off" data-title="Slide">
                 href="servicesbycategory/4.html"><img src="images/sercat/service-icon.png"
                     alt="Electrical"></a></li>
         <li data-toggle="tooltip" title="" data-original-title="Shower Filter"> <a
-                href="servicesbycategory/5.html"><img src="images/sercat/service-icon.png"
+                href="servicesbycategory/5.html"><img src="{{asset('images/sercat/service-icon.png')}}"
                     alt="Shower Filter"></a></li>
         <li data-toggle="tooltip" title="" data-original-title="Home Cleaning"> <a
-                href="servicesbycategory/6.html"><img src="images/sercat/service-icon.png"
+                href="servicesbycategory/6.html"><img src="{{asset('images/sercat/service-icon.png')}}"
                     alt="Home Cleaning"></a></li>
         <li data-toggle="tooltip" title="" data-original-title="Carpentry"> <a
-                href="servicesbycategory/7.html"><img src="images/sercat/service-icon.png"
+                href="servicesbycategory/7.html"><img src="{{asset('images/sercat/service-icon.png')}}"
                     alt="Carpentry"></a></li>
         <li data-toggle="tooltip" title="" data-original-title="Pest Control"> <a
-                href="servicesbycategory/8.html"><img src="images/sercat/service-icon.png"
+                href="servicesbycategory/8.html"><img src="{{asset('images/sercat/service-icon.png')}}"
                     alt="Pest Control"></a></li>
         <li data-toggle="tooltip" title="" data-original-title="Chimney Hob"> <a
-                href="servicesbycategory/9.html"><img src="images/sercat/service-icon.png"
+                href="servicesbycategory/9.html"><img src="{{asset('images/sercat/service-icon.png')}}"
                     alt="Chimney Hob"></a></li>
         <li data-toggle="tooltip" title="" data-original-title="Water Purifier"> <a
-                href="servicesbycategory/10.html"><img src="images/sercat/service-icon.png"
+                href="servicesbycategory/10.html"><img src="{{asset('images/sercat/service-icon.png')}}"
                     alt="Water Purifier"></a></li>
         <li data-toggle="tooltip" title="" data-original-title="Computer Repair"> <a
-                href="servicesbycategory/11.html"><img src="images/sercat/service-icon.png"
+                href="servicesbycategory/11.html"><img src="{{asset('images/sercat/service-icon.png')}}"
                     alt="Computer Repair"></a></li>
         <li data-toggle="tooltip" title="" data-original-title="TV"> <a
-                href="servicesbycategory/12.html"><img src="images/sercat/service-icon.png"
+                href="servicesbycategory/12.html"><img src="{{asset('images/sercat/service-icon.png')}}"
                     alt="TV"></a></li>
         <li data-toggle="tooltip" title="" data-original-title="Refrigerator"> <a
-                href="servicesbycategory/13.html"><img src="images/sercat/service-icon.png"
+                href="servicesbycategory/13.html"><img src="{{asset('images/sercat/service-icon.png')}}"
                     alt="Refrigerator"></a></li>
         <li data-toggle="tooltip" title="" data-original-title="Geyser"> <a
-                href="servicesbycategory/14.html"><img src="images/sercat/service-icon.png"
+                href="servicesbycategory/14.html"><img src="{{asset('images/sercat/service-icon.png')}}"
                     alt="Geyser"></a></li>
         <li data-toggle="tooltip" title="" data-original-title="Car"> <a
-                href="servicesbycategory/15.html"><img src="images/sercat/service-icon.png"
+                href="servicesbycategory/15.html"><img src="{{asset('images/sercat/service-icon.png')}}"
                     alt="Car"></a></li>
         <li data-toggle="tooltip" title="" data-original-title="Document"> <a
-                href="servicesbycategory/16.html"><img src="images/sercat/service-icon.png"
+                href="servicesbycategory/16.html"><img src="{{asset('images/sercat/service-icon.png')}}"
                     alt="Document"></a></li>
         <li data-toggle="tooltip" title="" data-original-title="Movers &amp; Packers"> <a
-                href="servicesbycategory/17.html"><img src="images/sercat/service-icon.png"
+                href="servicesbycategory/17.html"><img src="{{asset('images/sercat/service-icon.png')}}"
                     alt="Movers &amp; Packers"></a></li>
         <li data-toggle="tooltip" title="" data-original-title="Home Automation"> <a
-                href="servicesbycategory/18.html"><img src="images/sercat/service-icon.png"
+                href="servicesbycategory/18.html"><img src="{{asset('images/sercat/service-icon.png')}}"
                     alt="Home Automation"></a></li>
     </ul>
 </div>
@@ -119,7 +119,7 @@ data-saveperformance="off" data-title="Slide">
         style="padding-right: 5px;padding-left: 5px;">
         <a class="g-list" href="service-details/ac-dry-servicing.html">
             <div class="img-hover">
-                <img src="images/services/thumbnails/thumbnail.jpg" alt="AC Dry Servicing"
+                <img src="{{asset('images/services/thumbnails/thumbnail.jpg')}}" alt="AC Dry Servicing"
                     class="img-responsive">
             </div>
             <div class="info-gallery">
@@ -136,7 +136,7 @@ data-saveperformance="off" data-title="Slide">
         style="padding-right: 5px;padding-left: 5px;">
         <a class="g-list" href="service-details/ac-installation.html">
             <div class="img-hover">
-                <img src="images/services/thumbnails/thumbnail.jpg" alt="AC Installation"
+                <img src="{{asset('images/services/thumbnails/thumbnail.jpg')}}" alt="AC Installation"
                     class="img-responsive">
             </div>
             <div class="info-gallery">
@@ -153,7 +153,7 @@ data-saveperformance="off" data-title="Slide">
         style="padding-right: 5px;padding-left: 5px;">
         <a class="g-list" href="service-details/ac-gas-top-up.html">
             <div class="img-hover">
-                <img src="images/services/thumbnails/thumbnail.jpg" alt="AC Gas Top Up"
+                <img src="{{asset('images/services/thumbnails/thumbnail.jpg')}}" alt="AC Gas Top Up"
                     class="img-responsive">
             </div>
             <div class="info-gallery">
@@ -170,7 +170,7 @@ data-saveperformance="off" data-title="Slide">
         style="padding-right: 5px;padding-left: 5px;">
         <a class="g-list" href="service-details/ac-gas-refill.html">
             <div class="img-hover">
-                <img src="images/services/thumbnails/thumbnail.jpg" alt="AC Gas Refill"
+                <img src="{{asset('images/services/thumbnails/thumbnail.jpg')}}" alt="AC Gas Refill"
                     class="img-responsive">
             </div>
             <div class="info-gallery">
@@ -296,7 +296,7 @@ data-saveperformance="off" data-title="Slide">
 <div>
 <a class="g-list" href="service-details/ac-wet-servicing.html">
     <div class="img-hover">
-        <img src="images/services/thumbnails/thumbnail.jpg" alt="" class="img-responsive">
+        <img src="{{asset('images/services/thumbnails/thumbnail.jpg')}}" alt="" class="img-responsive">
     </div>
 
     <div class="info-gallery">
@@ -312,7 +312,7 @@ data-saveperformance="off" data-title="Slide">
 <div>
 <a class="g-list" href="service-details/bedroom-deep-cleaning.html">
     <div class="img-hover">
-        <img src="images/services/thumbnails/thumbnail.jpg" alt="" class="img-responsive">
+        <img src="{{asset('images/services/thumbnails/thumbnail.jpg')}}" alt="" class="img-responsive">
     </div>
 
     <div class="info-gallery">
@@ -328,7 +328,7 @@ data-saveperformance="off" data-title="Slide">
 <div>
 <a class="g-list" href="service-details/dining-chair-shampooing.html">
     <div class="img-hover">
-        <img src="images/services/thumbnails/thumbnail.jpg" alt="" class="img-responsive">
+        <img src="{{asset('images/services/thumbnails/thumbnail.jpg')}}" alt="" class="img-responsive">
     </div>
 
     <div class="info-gallery">
@@ -344,7 +344,7 @@ data-saveperformance="off" data-title="Slide">
 <div>
 <a class="g-list" href="service-details/carpet-shampooing.html">
     <div class="img-hover">
-        <img src="images/services/thumbnails/thumbnail.jpg" alt="" class="img-responsive">
+        <img src="{{asset('images/services/thumbnails/thumbnail.jpg')}}" alt="" class="img-responsive">
     </div>
 
     <div class="info-gallery">
@@ -360,7 +360,7 @@ data-saveperformance="off" data-title="Slide">
 <div>
 <a class="g-list" href="service-details/fabric-sofa-shampooing.html">
     <div class="img-hover">
-        <img src="images/services/thumbnails/thumbnail.jpg" alt="" class="img-responsive">
+        <img src="{{asset('images/services/thumbnails/thumbnail.jpg')}}" alt="" class="img-responsive">
     </div>
 
     <div class="info-gallery">
@@ -376,7 +376,7 @@ data-saveperformance="off" data-title="Slide">
 <div>
 <a class="g-list" href="service-details/bathroom-deep-cleaning.html">
     <div class="img-hover">
-        <img src="images/services/thumbnails/thumbnail.jpg" alt="" class="img-responsive">
+        <img src="{{asset('images/services/thumbnails/thumbnail.jpg')}}" alt="" class="img-responsive">
     </div>
 
     <div class="info-gallery">
@@ -392,7 +392,7 @@ data-saveperformance="off" data-title="Slide">
 <div>
 <a class="g-list" href="service-details/floor-scrubbing-polishing.html">
     <div class="img-hover">
-        <img src="images/services/thumbnails/thumbnail.jpg" alt="" class="img-responsive">
+        <img src="{{asset('images/services/thumbnails/thumbnail.jpg')}}" alt="" class="img-responsive">
     </div>
 
     <div class="info-gallery">
@@ -408,7 +408,7 @@ data-saveperformance="off" data-title="Slide">
 <div>
 <a class="g-list" href="service-details/mattress-shampooing.html">
     <div class="img-hover">
-        <img src="images/services/thumbnails/thumbnail.jpg" alt="" class="img-responsive">
+        <img src="{{asset('images/services/thumbnails/thumbnail.jpg')}}" alt="" class="img-responsive">
     </div>
 
     <div class="info-gallery">
@@ -424,7 +424,7 @@ data-saveperformance="off" data-title="Slide">
 <div>
 <a class="g-list" href="service-details/kitchen-deep-cleaning.html">
     <div class="img-hover">
-        <img src="images/services/thumbnails/thumbnail.jpg" alt="" class="img-responsive">
+        <img src="{{asset('images/services/thumbnails/thumbnail.jpg')}}" alt="" class="img-responsive">
     </div>
 
     <div class="info-gallery">

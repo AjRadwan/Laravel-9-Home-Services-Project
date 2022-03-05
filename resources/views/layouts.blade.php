@@ -58,11 +58,11 @@
 
 <ul class="collapse">
 <li class="title">
-<a href="index.php.html"><img src="images/logo.png"></a>
+<a href="index.php.html"><img src="{{asset('images/logo.png')}}"></a>
 </li>
 <li> <a href="javascript:void(0);">Air Conditioners</a>
 <ul class="drop-down one-column hover-fade">
-    <li><a href="service-details/ac-wet-servicing.html">Wet Servicing</a></li>
+    <li><a href="{{asset('service-details/ac-wet-servicing.html')}}">Wet Servicing</a></li>
     <li><a href="service-details/ac-dry-servicing.html">Dry Servicing</a></li>
     <li><a href="service-details/ac-installation.html">Installation</a></li>
     <li><a href="service-details/ac-uninstallation.html">Uninstallation</a></li>
@@ -143,7 +143,7 @@
     </li>
      @else 
      <li class="login-form"> 
-        <a href="#" title="#">Customer</a>
+        <a >Customer</a>
      <ul class="drop-down one-column hover-fade">
         <li><a href="{{route('customer.dashboard')}}">Customer</a></li>
         <li><a href="{{route('logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a></li>
@@ -167,6 +167,7 @@
 </header>
 
 {{$slot}}
+
 
 <footer id="footer" class="footer-v1">
 <div class="container">

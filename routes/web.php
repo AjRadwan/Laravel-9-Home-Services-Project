@@ -1,9 +1,8 @@
 <?php
 use App\Http\Livewire\HomeComponent;
-use App\Http\Livewire\Admin\AdminDashboard;
-use App\Http\Livewire\Admin\ServiceDashboard;
-use App\Http\Livewire\Admin\CustomerDashboards;  
- 
+use App\Http\Livewire\Admin\AdminDashboardComponent;
+use App\Http\Livewire\Customer\CustomerDashboardComponent;
+use App\Http\Livewire\Servic\ServiceComponent;
 use Illuminate\Support\Facades\Route;
 /*
 |--------------------------------------------------------------------------
@@ -16,20 +15,23 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
- route::get('/', HomeComponent::class)->name('home');
+ Route::get('/', HomeComponent::class)->name('home');
  
 //for customer
-Route::middleware(['auth:sanctum', 'verified'])->group(function(){
-    Route::get('/customer/dashboard', CustomerDashboard::class)->name('customer.dashboard');
+Route::middleware(['auth:sanctum', 'verified'])
+->group(function(){
+    Route::get('/customer/dashboard', CustomerDashboardComponent::class)->name('customer.dashboard');
   });
 
 //for service Providers
-Route::middleware(['auth:sanctum', 'verified', 'serviceprovider'])->group(function(){
-    Route::get('/service/dashboard', ServiceDashboard::class)->name('service.dashboard');
+Route::middleware(['auth:sanctum', 'verified', 'serviceprovider'])
+->group(function(){
+    Route::get('/service/dashboard', ServiceComponent::class)->name('service.dashboard');
   });
 
 //for admin
 
-Route::middleware(['auth:sanctum', 'verified', 'authadmin'])->group(function(){
-  Route::get('/admin/dashboard', AdminDashboard::class)->name('admin.dashboard');
+Route::middleware(['auth:sanctum', 'verified', 'authadmin'])
+->group(function(){
+  Route::get('/admin/dashboard', AdminDashboardComponent::class)->name('admin.dashboard');
 });
