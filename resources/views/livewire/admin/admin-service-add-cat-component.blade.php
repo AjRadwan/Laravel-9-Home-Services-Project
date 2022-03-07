@@ -32,37 +32,47 @@
             </div>
         </div>
         <div class="panel-body">
-            <form action="" class="form-horizontal" >
-                <div class="form-group">
-                    <label for="name" class="col-sm-3 control">Category Name</label>
-                    <div class="col-sm-9">
-                        <input type="text" class="form-control" name="name" wire:model="name">
-                        
-                    </div>
+            @if(Session()->has('success'))
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+    <strong>{{Session::get('success')}} </strong> 
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>  
+    @endif 
+        <form action="" class="form-horizontal" wire:submit.prevent="CreateNewCat">
+            @csrf
+            <div class="form-group">
+                <label for="name" class="col-sm-3 control">Category Name</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" name="name" wire:model="name" />
+                @error('name') <p class="text-danger">{{$success}}</p>@enderror
                 </div>
-                <div class="form-group">
-                    <label for="name" class="col-sm-3 control">Category Slug</label>
-                    <div class="col-sm-9">
-                        <input type="text" class="form-control" name="slug" wire:model="slug">
+            </div>
+            <div class="form-group">
+                <label for="name" class="col-sm-3 control">Category Slug</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" name="slug" wire:model="slug" wire:keyup="generateSlug" />
+                @error('slug') <p class="text-danger">{{$success}}</p>@enderror
 
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="name" class="col-sm-3 control">Category Image</label>
-                    <div class="col-sm-9">
-                        <input type="file" class="form-control-file" name="image" wire:mode="image">
 
-                    </div>
                 </div>
-                <button type="submit" class="btn btn-success pull-right">Add Category</button>
-            </form>
-        </div>
+            </div>
+            <div class="form-group">
+                <label for="name" class="col-sm-3 control">Category Image</label>
+                <div class="col-sm-9">
+                    <input type="file" class="form-control-file" name="image" wire:model="image" />
+                    @error('image') <p class="text-danger">{{$success}}</p>@enderror
+
+                </div>
+            </div>
+            <button type="submit" class="btn btn-success pull-right">Add Category</button>
+        </form>
     </div>
-      
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
+</div>
+    
+</div>
+</div>
+</div>
+</div>
+</div>
 </section>
 </div>
