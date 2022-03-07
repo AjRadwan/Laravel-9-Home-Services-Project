@@ -104,7 +104,7 @@
             <div class="col-md-6">
                 <input id="email" type="email" class="form-control" name="email" value="" required="">
             </div>
-        </div>
+        </div>  
 <div class="form-group row">
     <label for="phone" class="col-md-4 col-form-label text-md-right">Phone</label>
     <div class="col-md-6">
@@ -122,9 +122,7 @@
     </div>
 </div>
 
- 
-
-        <div class="form-group row">
+  <div class="form-group row">
             <label for="password"
                 class="col-md-4 col-form-label text-md-right">Password</label>
             <div class="col-md-6">
