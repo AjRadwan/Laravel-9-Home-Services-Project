@@ -32,25 +32,25 @@
             </div>
         </div>
         <div class="panel-body">
-            <form action="" class="form-horizontal">
+            <form action="" class="form-horizontal" >
                 <div class="form-group">
                     <label for="name" class="col-sm-3 control">Category Name</label>
                     <div class="col-sm-9">
-                        <input type="text" class="form-control" name="name">
+                        <input type="text" class="form-control" name="name" wire:model="name">
                         
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="name" class="col-sm-3 control">Category Slug</label>
                     <div class="col-sm-9">
-                        <input type="text" class="form-control" name="slug">
+                        <input type="text" class="form-control" name="slug" wire:model="slug">
 
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="name" class="col-sm-3 control">Category Image</label>
                     <div class="col-sm-9">
-                        <input type="file" class="form-control-file" name="image">
+                        <input type="file" class="form-control-file" name="image" wire:mode="image">
 
                     </div>
                 </div>

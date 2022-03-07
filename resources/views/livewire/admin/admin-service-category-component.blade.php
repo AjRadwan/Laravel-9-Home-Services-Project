@@ -30,28 +30,31 @@
      <a href="{{route('admin.add-service-category')}}" class="btn btn-primary info pull-right">Add New</a>
        </div>
    </div>
+    <div class="panel-body">
+        <table class="table table-striped table-bordered table-hover">
+            <thead>
+                 <tr>
+                     <th>#</th>
+                     <th>Name</th>
+                     <th>slug</th>
+                     <th>Image</th>
+                 </tr>
+            </thead>
+            <tbody>
+                @foreach ($categories as $category)
+                <tr>
+                 <td>{{$category->id}}</td>
+                 <td>{{$category->name}}</td>
+                 <td>{{$category->slug}}</td>
+                 <td><img src="{{asset('images/categories')}}/{{$category->image}}" width="50" height="50"></td>
+             </tr>
+                @endforeach
+            </tbody>
+              </table>
+    </div>
 </div>
 
-         <table class="table table-striped table-bordered table-hover">
-       <thead>
-            <tr>
-                <th>#</th>
-                <th>Name</th>
-                <th>slug</th>
-                <th>Image</th>
-            </tr>
-       </thead>
-       <tbody>
-           @foreach ($categories as $category)
-           <tr>
-            <td>{{$category->id}}</td>
-            <td>{{$category->name}}</td>
-            <td>{{$category->slug}}</td>
-            <td><img src="{{asset('images/categories')}}/{{$category->image}}" width="50" height="50"></td>
-        </tr>
-           @endforeach
-       </tbody>
-         </table>
+        
          {{$categories->links()}}
         </div>
         </div>
