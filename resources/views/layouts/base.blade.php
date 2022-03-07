@@ -61,7 +61,8 @@
 <a href="index.php.html"><img src="{{asset('images/logo.png')}}"></a>
 </li>
 <li> <a href="javascript:void(0);">Air Conditioners</a>
-<ul class="drop-down one-column hover-fade">
+<li> <a href="{{route('home.service-category')}}">Serive Categories</a>
+{{-- <ul class="drop-down one-column hover-fade">
     <li><a href="{{asset('service-details/ac-wet-servicing.html')}}">Wet Servicing</a></li>
     <li><a href="service-details/ac-dry-servicing.html">Dry Servicing</a></li>
     <li><a href="service-details/ac-installation.html">Installation</a></li>
@@ -69,7 +70,7 @@
     <li><a href="service-details/ac-gas-top-up.html">Gas Top Up</a></li>
     <li><a href="service-details/ac-gas-refill.html">Gas Refill</a></li>
     <li><a href="service-details/ac-repair.html">Repair</a></li>
-</ul>
+</ul> --}}
 </li>
 <li> <a href="#">Appliances</a>
 <ul class="drop-down one-column hover-fade">

@@ -1,5 +1,6 @@
 <?php
 use App\Http\Livewire\HomeComponent;
+use App\Http\Livewire\ServiceCategoriesComponent;
 use App\Http\Livewire\Admin\AdminDashboardComponent;
 use App\Http\Livewire\Customer\CustomerDashboardComponent;
 use App\Http\Livewire\Servic\ServiceComponent;
@@ -16,6 +17,8 @@ use Illuminate\Support\Facades\Route;
 */
 
  Route::get('/', HomeComponent::class)->name('home');
+
+ Route::get('/service-category', ServiceCategoriesComponent::class)->name('home.service-category');
  
 //for customer
 Route::middleware(['auth:sanctum', 'verified'])
