@@ -32,12 +32,12 @@
             </div>
         </div>
         <div class="panel-body">
-            @if(Session()->has('success'))
-    <div class="alert alert-success alert-dismissible fade show" role="alert">
-    <strong>{{Session::get('success')}} </strong> 
-    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-    </div>  
-    @endif 
+            @if (session()->has('msg'))
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+               <strong>{{session('msg')}} </strong> 
+               <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+             </div>  
+            @endif  
         <form action="" class="form-horizontal" wire:submit.prevent="CreateNewCat">
             @csrf
             <div class="form-group">
@@ -54,18 +54,20 @@
                 @error('slug') <p class="text-danger">{{$success}}</p>@enderror
 
 
-                </div>
             </div>
-            <div class="form-group">
-                <label for="name" class="col-sm-3 control">Category Image</label>
-                <div class="col-sm-9">
-                    <input type="file" class="form-control-file" name="image" wire:model="image" />
-                    @error('image') <p class="text-danger">{{$success}}</p>@enderror
-
-                </div>
+        </div>
+        <div class="form-group">
+            <label for="name" class="col-sm-3 control">Category Image</label>
+            <div class="col-sm-9">
+                <input type="file" class="form-control-file" name="image" wire:model="image" />
+                @error('image') <p class="text-danger">{{$success}}</p>@enderror
+            @if ($image)
+                <img src="{{$image->temporaryUrl()}}" width="70px" />
+            @endif
             </div>
-            <button type="submit" class="btn btn-success pull-right">Add Category</button>
-        </form>
+        </div>
+        <button type="submit" class="btn btn-success pull-right">Add Category</button>
+    </form>
     </div>
 </div>
     

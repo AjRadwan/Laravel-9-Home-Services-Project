@@ -39,7 +39,7 @@ class AdminServiceAddCatComponent extends Component
        $this->image->StoreAs('categories', $imageName);
        $scategory->image = $imageName;
        $scategory->save();
-       session()->flash('success', 'Category has been created successfully');
+      return redirect()->back()->with('msg', 'Category Created successafully');
    }
 
 
