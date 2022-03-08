@@ -119,7 +119,7 @@
          <option value="SVP">Service Provider</option>
          <option value="ADM">Admin</option>
      </select>
-    </div>
+    </div>  
 </div>
 
   <div class="form-group row">
