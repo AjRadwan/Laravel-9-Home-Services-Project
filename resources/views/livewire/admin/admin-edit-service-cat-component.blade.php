@@ -32,13 +32,14 @@
             </div>
         </div>
         <div class="panel-body">
-            @if (session()->has('msg'))
-            <div class="alert alert-success alert-dismissible fade show" role="alert">
-               <strong>{{session('msg')}} </strong> 
-               <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-             </div>  
-            @endif  
-        <form action="" class="form-horizontal" wire:submit.prevent="CreateNewCat">
+         
+                @if (session()->has('message'))
+                    <div class="alert alert-success">
+                        {{ session('message') }}
+                    </div>
+                @endif
+        
+        <form action="" class="form-horizontal" wire:submit.prevent="updateService">
             @csrf
             <div class="form-group">
                 <label for="name" class="col-sm-3 control">Category Name</label>
@@ -62,9 +63,9 @@
                 <input type="file" class="form-control-file" name="image" wire:model="newImage" />
                 @error('newImage') <p class="text-danger">{{$success}}</p>@enderror
             @if ($newImage)
-                <img src="{{$image->temporaryUrl()}}" width="70px" />
+                <img src="{{$newImage->temporaryUrl()}}" width="70px" />
                 @else
-                <img src="{{asset('image/categories')}}/{{$image}}" width="70px" />
+                <img src="{{asset('images/categories')}}/{{$image}}" width="70px" />
           @endif
             </div>
         </div>

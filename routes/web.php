@@ -42,5 +42,5 @@ Route::middleware(['auth:sanctum', 'verified', 'authadmin'])
   Route::get('/admin/dashboard', AdminDashboardComponent::class)->name('admin.dashboard');
   Route::get('/admin/service-category', AdminServiceCategoryComponent::class)->name('admin.service-category');
   Route::get('/admin/add-service', AdminServiceAddCatComponent::class)->name('admin.add-service-category');
-  Route::get('/admin/edit-service{category_id}', AdminEditServiceCatComponent::class)->name('admin.edit-service-category');
+  Route::get('/admin/edit-service/{category_id}', AdminEditServiceCatComponent::class)->name('admin.edit-service-category');
 });
