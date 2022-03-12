@@ -69,7 +69,7 @@
           @endif
             </div>
         </div>
-        <button type="submit" class="btn btn-success pull-right">Add Category</button>
+        <button type="submit" class="btn btn-success pull-right">Update Category</button>
     </form>
     </div>
 </div>

@@ -10,7 +10,7 @@ class AdminServiceAddCatComponent extends Component
     use WithFileUploads;
    public $name;
    public $slug;
-   public $image;
+   public $image;   
 
 
     public function generateSlug(){
@@ -39,7 +39,7 @@ class AdminServiceAddCatComponent extends Component
        $this->image->StoreAs('categories', $imageName);
        $scategory->image = $imageName;
        $scategory->save();
-      return redirect()->back()->with('msg', 'Category Created successafully');
+       session()->flash('message', 'Category successfully Created.');
    }
 
 

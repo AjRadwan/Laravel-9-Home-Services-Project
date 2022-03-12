@@ -31,6 +31,11 @@
     </div>
 </div>
 <div class="panel-body">
+    @if (session()->has('message'))
+    <div class="alert alert-success">
+        {{ session('message') }}
+    </div>
+@endif
     <table class="table table-striped table-bordered table-hover">
         <thead>
                 <tr>
@@ -41,19 +46,26 @@
                     <th>Action</th>
                 </tr>
         </thead>
-        <tbody>
-            @foreach ($categories as $category)
-            <tr>
-                <td>{{$category->id}}</td>
-                <td>{{$category->name}}</td>
-                <td>{{$category->slug}}</td>
-                <td><img src="{{asset('images/categories')}}/{{$category->image}}" width="50" height="50"></td>
-                <td><a href="{{route('admin.edit-service-category', $category->id)}}">
-            <i class="fa fa-edit fa-2x text-info"></a></td>
-            </tr>
-            @endforeach
-        </tbody>
-            </table>
+<tbody>
+    @foreach ($categories as $category)
+    <tr>
+        <td>{{$category->id}}</td>
+        <td>{{$category->name}}</td>
+        <td>{{$category->slug}}</td>
+        <td>
+        <img src="{{asset('images/categories')}}/{{$category->image}}" width="50" height="50">
+        </td>
+        <td>
+    <a href="{{route('admin.edit-service-category', $category->id)}}">
+    <i class="fa fa-edit fa-2x text-info"></i></a>
+        <a href="#" onclick="return confirm('Are you sure you want to delete this service category')"
+        wire:click.prevent="deleteServiceCategory({{$category->id}})">
+            <i class="fa fa-times fa-2x text-danger"></i></a>
+    </td>
+    </tr>
+    @endforeach
+</tbody>
+    </table>
 </div>
 </div>
     
