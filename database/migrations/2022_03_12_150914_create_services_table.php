@@ -19,7 +19,6 @@ return new class extends Migration
             $table->string('name');
             $table->string('slug')->unique();
             $table->string('tagline');
-            $table->bigInteger('service_category_id')->unsigned()->nullable();
             $table->decimal('price');
             $table->decimal('discount')->nullable();
             $table->enum('discount_type',['fixed', 'percent'])->nullable();
@@ -29,8 +28,8 @@ return new class extends Migration
             $table->longtext('inclusion')->nullable();
             $table->longtext('exclusion')->nullable();
             $table->boolean('status')->default(true);
-
-            $table->timestamps();
+           $table->timestamps();
+            
         });
     }
 
