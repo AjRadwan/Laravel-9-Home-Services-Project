@@ -28,8 +28,7 @@ return new class extends Migration
             $table->longtext('inclusion')->nullable();
             $table->longtext('exclusion')->nullable();
             $table->boolean('status')->default(true);
-           $table->timestamps();
-            
+            $table->timestamps();       
         });
     }
 

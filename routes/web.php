@@ -1,5 +1,6 @@
 <?php
 use App\Http\Livewire\HomeComponent;
+use App\Http\Livewire\ServicesByCategoryComponent;
 use App\Http\Livewire\ServiceCategoriesComponent;
 use App\Http\Livewire\Admin\AdminDashboardComponent;
 use App\Http\Livewire\Admin\AdminEditServiceCatComponent;
@@ -20,6 +21,9 @@ use Illuminate\Support\Facades\Route;
 */
 
  Route::get('/', HomeComponent::class)->name('home');
+
+Route::get('/{category_slug}/services', ServicesByCategoryComponent::class)->name('home.service-by-category');
+
 
  Route::get('/service-category', ServiceCategoriesComponent::class)->name('home.service-category');
  
